@@ -1,5 +1,11 @@
 import React from "react";
 
-export const LoadMoreBtn = () => {
-  return <button>LoadMoreBtn</button>;
+const LoadMoreBtn = ({ onLoadMore }) => {
+  return (
+    <div>
+      <button onClick={onLoadMore}>Load more</button>
+    </div>
+  );
 };
+
+export default LoadMoreBtn;
